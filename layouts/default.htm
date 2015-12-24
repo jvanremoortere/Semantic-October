@@ -16,7 +16,7 @@
         {% styles %}
     </head>
     <body>
-        DEFAULT LAYOUT.
+        {% page %}
         
         <!-- SCRIPTS -->
         <script src="{{ [
@@ -24,5 +24,7 @@
             'assets/js/vendor/semantic.min.js',
             'assets/js/app.js'
         ]|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
     </body>
 </html>

@@ -3,3 +3,140 @@ url = "/"
 layout = "default"
 is_hidden = 0
 ==
+{% put styles %}
+<style>
+    .hidden.menu {
+        display: none;
+    }
+    
+    .masthead.segment {
+        min-height: 700px;
+        padding: 1em 0em;
+    }
+    
+    .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+    }
+    
+    .masthead h1.ui.header {
+        margin-top: 3em;
+        margin-bottom: 0em;
+        font-size: 4em;
+        font-weight: normal;
+    }
+    .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+    }
+    
+    .footer.segment {
+        padding: 5em 0em;
+    }
+    
+    .secondary.pointing.menu .toc.item {
+        display: none;
+    }
+    
+    @media only screen and (max-width: 700px) {
+        .ui.fixed.menu {
+            display: none !important;
+        }
+        
+        .secondary.pointing.menu .item,
+        secondary.pointing.menu .menu {
+            display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+            display: block;
+        }
+        
+        .masthead.segment {
+            min-height: 350px;
+        }
+        .masthead h1.ui.header {
+            font-size: 2em;
+            margin-top: 1.5em;
+        }
+        .masthead h2 {
+            margin-top: 0.5em;
+            font-size: 1.5em;
+        }
+    }
+</style>
+{% endput %}
+<!-- FOLLOWING MENU -->
+<div class="ui large top fixed hidden menu">
+    <div class="ui container">
+        <a class="active item">Home</a>
+        <a class="item">Services</a>
+        <a class="item">Portfolio</a>
+        <a class="item">Customers</a>
+        <div class="right menu">
+            <div class="item">
+                <a class="ui button">Contact us</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SIDEBAR MENU -->
+<div class="ui vertical inverted sidebar menu">
+    <a class="active item">Home</a>
+    <a class="item">Services</a>
+    <a class="item">Portfolio</a>
+    <a class="item">Customers</a>
+    <a class="item">Contact us</a>
+</div>
+
+<!-- PAGE CONTENT -->
+<div class="pusher">
+    <div class="ui inverted vertical masthead center aligned segment">
+        <div class="ui container">
+            <div class="ui large secondary inverted pointing menu">
+                <a class="toc item">
+                    <i class="sidebar icon"></i>
+                </a>
+                <a class="active item">Home</a>
+                <a class="item">Services</a>
+                <a class="item">Portfolio</a>
+                <a class="item">Customers</a>
+                <div class="right item">
+                    <a class="ui inverted button">Contact us</a>
+                </div>
+            </div>
+        </div>
+        <div class="ui text container">
+            <h1 class="ui inverted header">
+                Semantic October
+            </h1>
+            <h2>A Semantic UI theme for OctoberCMS.</h2>
+            <div class="ui huge orange button">Get started <i class="right arrow icon"></i></div>
+        </div>
+    </div>
+</div>
+{% put scripts %}
+<script>
+    $(document)
+        .ready(function() {
+            
+            // FIX MENU WHEN PASSED
+            $('.masthead')
+                .visibility({
+                    once: false,
+                    onBottomPassed: function() {
+                        $('.fixed.menu').transition('fade in');
+                    },
+                    onBottomPassedReverse: function() {
+                        $('.fixed.menu').transition('fade out');
+                    }
+                })
+            ;
+            
+            // CREATE SIDEBAR AND ATTACH TO MENU OPEN
+            $('.ui.sidebar')
+                .sidebar('attach events', '.toc.item')
+            ;
+        })
+    ;
+</script>
+{% endput %}
