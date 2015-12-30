@@ -13,7 +13,7 @@ is_hidden = 0
         min-height: 700px;
         padding: 1em 0em;
     }
-    
+
     .masthead .ui.menu .ui.button {
         margin-left: 0.5em;
     }
@@ -22,11 +22,18 @@ is_hidden = 0
         margin-top: 3em;
         margin-bottom: 0em;
         font-size: 4em;
-        font-weight: normal;
+        font-weight: bold;
+        
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0);
+        color: rgba(255, 255, 255, 1);
     }
     .masthead h2 {
         font-size: 1.7em;
         font-weight: normal;
+    }
+    
+    .masthead .start.button {
+        margin-top: 1em;
     }
     
     .footer.segment {
@@ -35,6 +42,10 @@ is_hidden = 0
     
     .secondary.pointing.menu .toc.item {
         display: none;
+    }
+    
+    .ui.icon.header {
+        margin: 2em 0em;
     }
     
     @media only screen and (max-width: 700px) {
@@ -61,19 +72,26 @@ is_hidden = 0
             margin-top: 0.5em;
             font-size: 1.5em;
         }
+        
+        .masthead .start.button {
+            margin-top: 0.5em;
+        }
     }
 </style>
 {% endput %}
 <!-- FOLLOWING MENU -->
 <div class="ui large top fixed hidden menu">
     <div class="ui container">
+        <div href="#" class="header item">
+            <img class="logo" src="{{ 'assets/images/semantic-october.png'|theme }}">
+        </div>
         <a class="active item">Home</a>
         <a class="item">Services</a>
         <a class="item">Portfolio</a>
         <a class="item">Customers</a>
         <div class="right menu">
             <div class="item">
-                <a class="ui button">Contact us</a>
+                <a class="ui orange button">Contact us</a>
             </div>
         </div>
     </div>
@@ -110,7 +128,241 @@ is_hidden = 0
                 Semantic October
             </h1>
             <h2>A Semantic UI theme for OctoberCMS.</h2>
-            <div class="ui huge orange button">Get started <i class="right arrow icon"></i></div>
+            <div class="ui huge orange start button">Get started <i class="right arrow icon"></i></div>
+        </div>
+    </div>
+    <div class="ui container">
+        <div class="ui center aligned basic segment">
+            <h1 class="ui icon header">
+                <i class="lightning icon"></i>
+                <div class="content">
+                    Services
+                    <div class="sub header">We provide services. Check some of them out here.</div>
+                </div>
+            </h1>
+            <div class="ui grid">
+                <div class="stackable doubling four column row">
+                    <div class="column">
+                        <img class="ui centered small image" src="{{ 'assets/images/services/CONSULTING.png'|theme }}">
+                        <h2 class="center aligned header">Consulting</h2>
+                    </div>
+                    <div class="column">
+                        <img class="ui centered small image" src="{{ 'assets/images/services/WEB.png'|theme }}">
+                        <h2 class="center aligned header">Web</h2>
+                    </div>
+                    <div class="column">
+                        <img class="ui centered small image" src="{{ 'assets/images/services/PRINT.png'|theme }}">
+                        <h2 class="center aligned header">Print</h2>
+                    </div>
+                    <div class="column">
+                        <img class="ui centered small image" src="{{ 'assets/images/services/PHOTOGRAPHY.png'|theme }}">
+                        <h2 class="center aligned header">Photography</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui center aligned basic segment">
+            <h1 class="ui icon header">
+                <i class="lab icon"></i>
+                <div class="content">
+                    Projects
+                    <div class="sub header">We do projects. Check some of them out here.</div>
+                </div>
+            </h1>
+            <div class="ui grid">
+                <div class="stackable doubling four column row">
+                    <div class="column">
+                        <div class="ui project fluid image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui small button">View Project</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="http://lorempixel.com/640/480/abstract/1">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui project fluid image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui small button">View Project</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="http://lorempixel.com/640/480/abstract/2">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui project fluid image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui small button">View Project</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="http://lorempixel.com/640/480/abstract/3">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui project fluid image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui small button">View Project</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="http://lorempixel.com/640/480/abstract/4">
+                        </div>
+                    </div>
+                </div>
+                <div class="stackable doubling four column row">
+                    <div class="column">
+                        <div class="ui project fluid image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui small button">View Project</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="http://lorempixel.com/640/480/abstract/5">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui project fluid image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui small button">View Project</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="http://lorempixel.com/640/480/abstract/6">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui project fluid image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui small button">View Project</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="http://lorempixel.com/640/480/abstract/7">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui project fluid image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui small button">View Project</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="http://lorempixel.com/640/480/abstract/8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="ui section divider"></div>
+        <div class="ui center aligned basic segment">
+            <h1 class="ui icon header">
+                <i class="users icon"></i>
+                <div class="content">
+                    Customers
+                    <div class="sub header">We have customers. Check some of them out here.</div>
+                </div>
+            </h1>
+            <div class="ui grid">
+                <div class="stackable doubling four column row">
+                    <div class="column">
+                        <a href="http://logofaves.com/2010/04/babelfish-legal/"><img class="ui fluid image" src="http://logofaves.com/wp-content/uploads/2010/04/bf_m.jpg"></a>
+                    </div>
+                    <div class="column">
+                        <a href="http://logofaves.com/2010/03/top-spice/"><img class="ui fluid image" src="http://logofaves.com/wp-content/uploads/2010/03/top_m.jpg"></a>
+                    </div>
+                    <div class="column">
+                        <a href="http://logofaves.com/2009/01/wem/"><img class="ui fluid image" src="http://logofaves.com/wp-content/uploads/2009/01/waterm_m.jpg"></a>
+                    </div>
+                    <div class="column">
+                        <a href="http://logofaves.com/2014/07/black-fox/"><img class="ui fluid image" src="http://logofaves.com/wp-content/uploads/2014/01/Black_fox_m.jpg"></a>
+                    </div>
+                </div>
+                <div class="stackable doubling four column row">
+                    <div class="column">
+                        <a href="http://logofaves.com/2012/04/boundary/"><img class="ui fluid image" src="http://logofaves.com/wp-content/uploads/2012/04/boundry_m.jpg"></a>
+                    </div>
+                    <div class="column">
+                        <a href="http://logofaves.com/2012/01/mountain/"><img class="ui fluid image" src="http://logofaves.com/wp-content/uploads/2012/01/mountain_m.jpg"></a>
+                    </div>
+                    <div class="column">
+                        <a href="http://logofaves.com/2013/02/coworker/"><img class="ui fluid image" src="http://logofaves.com/wp-content/uploads/2013/02/co_m.jpg"></a>
+                    </div>
+                    <div class="column">
+                        <a href="http://logofaves.com/2009/04/pencil/"><img class="ui fluid image" src="http://logofaves.com/wp-content/uploads/2009/04/pencil_m.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+            <div class="ui stackable inverted divided grid">
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Link Group 1</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link One</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Link Group 2</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link One</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Link Group 3</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link One</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Link Group 4</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link One</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="ui inverted section divider"></div>
+            <img src="{{ 'assets/images/semantic-october.png'|theme }}" class="ui centered mini image">
+            <div class="ui horizontal inverted small divided link list">
+                <a class="item" href="#">Site Map</a>
+                <a class="item" href="#">Contact Us</a>
+                <a class="item" href="#">Terms</a>
+                <a class="item" href="#">Privacy Policy</a>
+            </div>
         </div>
     </div>
 </div>
@@ -136,6 +388,13 @@ is_hidden = 0
             $('.ui.sidebar')
                 .sidebar('attach events', '.toc.item')
             ;
+            
+            // PROJECT DIMMER
+            $('.ui.project.fluid.image')
+                .dimmer({
+                    on: 'hover'
+                })
+            ;    
         })
     ;
 </script>
