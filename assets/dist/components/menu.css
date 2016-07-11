@@ -21,7 +21,6 @@
 
 .ui.menu {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0em;
@@ -56,7 +55,6 @@
 }
 .ui.menu:not(.vertical) > .menu {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -67,11 +65,9 @@
 
 .ui.menu:not(.vertical) .item {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -82,7 +78,6 @@
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   -webkit-user-select: none;
@@ -150,8 +145,8 @@
   position: relative;
   top: 0em;
   margin: -0.5em 0em;
-  padding-bottom: 0.71428571em;
-  padding-top: 0.71428571em;
+  padding-bottom: 0.78571429em;
+  padding-top: 0.78571429em;
   font-size: 1em;
 }
 
@@ -162,16 +157,13 @@
 .ui.menu > .grid,
 .ui.menu > .container {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: inherit;
-  -webkit-align-items: inherit;
       -ms-flex-align: inherit;
           align-items: inherit;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: inherit;
       -ms-flex-direction: inherit;
           flex-direction: inherit;
 }
@@ -244,7 +236,6 @@
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
-  -webkit-flex-direction: column !important;
       -ms-flex-direction: column !important;
           flex-direction: column !important;
 }
@@ -254,7 +245,7 @@
   margin: 0;
   text-align: left;
   font-size: 1em !important;
-  padding: 0.71428571em 1.14285714em !important;
+  padding: 0.78571429em 1.14285714em !important;
   background: transparent !important;
   color: rgba(0, 0, 0, 0.87) !important;
   text-transform: none !important;
@@ -339,17 +330,17 @@
   background: #999999;
   color: #FFFFFF;
   margin-left: 1em;
-  padding: 0.3em 0.71428571em;
+  padding: 0.3em 0.78571429em;
 }
 .ui.vertical.menu .item > .label {
   background: #999999;
   color: #FFFFFF;
   margin-top: -0.15em;
   margin-bottom: -0.15em;
-  padding: 0.3em 0.71428571em;
+  padding: 0.3em 0.78571429em;
 }
 .ui.menu .item > .floating.label {
-  padding: 0.3em 0.71428571em;
+  padding: 0.3em 0.78571429em;
 }
 
 /*--------------
@@ -485,7 +476,6 @@ Floated Menu / Item
 .ui.menu:not(.vertical) .left.item,
 .ui.menu:not(.vertical) .left.menu {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-right: auto !important;
@@ -495,7 +485,6 @@ Floated Menu / Item
 .ui.menu:not(.vertical) .right.item,
 .ui.menu:not(.vertical) .right.menu {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto !important;
@@ -516,7 +505,6 @@ Floated Menu / Item
   display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   background: #FFFFFF;
@@ -565,8 +553,8 @@ Floated Menu / Item
   top: 0%;
   left: 0px;
   width: 100%;
-  background: rgba(34, 36, 38, 0.1);
   height: 1px;
+  background: rgba(34, 36, 38, 0.1);
 }
 .ui.vertical.menu .item:first-child:before {
   display: none !important;
@@ -664,7 +652,9 @@ Floated Menu / Item
 .ui.tabular.menu + .attached:not(.top).segment,
 .ui.tabular.menu + .attached:not(.top).segment + .attached:not(.top).segment {
   border-top: none;
-  margin: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
   width: 100%;
 }
 .top.attached.segment + .ui.bottom.tabular.menu {
@@ -759,7 +749,6 @@ Floated Menu / Item
 .ui.pagination.menu {
   margin: 0em;
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle;
@@ -805,12 +794,11 @@ Floated Menu / Item
 
 /* Item */
 .ui.secondary.menu .item {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   box-shadow: none;
   border: none;
-  padding: 0.71428571em 0.92857143em;
+  padding: 0.78571429em 0.92857143em;
   margin: 0em 0.35714286em;
   background: none;
   -webkit-transition: color 0.1s ease;
@@ -931,9 +919,8 @@ Floated Menu / Item
   border-bottom-color: transparent;
   border-bottom-style: solid;
   border-radius: 0em;
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin: 0em 0em -2px;
   padding: 0.85714286em 1.14285714em;
   border-bottom-width: 2px;
@@ -972,14 +959,14 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .active.item {
   background-color: transparent;
   box-shadow: none;
-  border-color: #3F3F3F;
+  border-color: #1B1C1D;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.95);
 }
 
 /* Active Hover */
 .ui.secondary.pointing.menu .active.item:hover {
-  border-color: #3F3F3F;
+  border-color: #1B1C1D;
   color: rgba(0, 0, 0, 0.95);
 }
 
@@ -1006,7 +993,7 @@ Floated Menu / Item
 
 /* Vertical Active */
 .ui.secondary.vertical.pointing.menu .active.item {
-  border-color: #3F3F3F;
+  border-color: #1B1C1D;
 }
 
 /* Inverted */
@@ -1025,7 +1012,8 @@ Floated Menu / Item
 }
 
 /* Hover */
-.ui.secondary.inverted.pointing.menu .item:hover {
+.ui.secondary.inverted.pointing.menu .link.item:hover,
+.ui.secondary.inverted.pointing.menu a.item:hover {
   color: rgba(0, 0, 0, 0.95);
 }
 
@@ -1049,9 +1037,8 @@ Floated Menu / Item
 .ui.text.menu .item {
   border-radius: 0px;
   box-shadow: none;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   margin: 0em 0em;
   padding: 0.35714286em 0.5em;
   font-weight: normal;
@@ -1100,6 +1087,8 @@ Floated Menu / Item
 }
 .ui.vertical.text.menu .item {
   margin: 0.57142857em 0em;
+  padding-left: 0em;
+  padding-right: 0em;
 }
 .ui.vertical.text.menu .item > i.icon {
   float: none;
@@ -1178,7 +1167,7 @@ Floated Menu / Item
 .ui.icon.menu .item {
   height: auto;
   text-align: center;
-  color: #3F3F3F;
+  color: #1B1C1D;
 }
 
 /* Icon */
@@ -1226,7 +1215,6 @@ Floated Menu / Item
   min-width: 6em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -1258,7 +1246,6 @@ Floated Menu / Item
   .ui.stackable.menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1272,8 +1259,16 @@ Floated Menu / Item
     bottom: 0px;
     left: 0px;
     width: 100%;
-    background: rgba(34, 36, 38, 0.1);
     height: 1px;
+    background: rgba(34, 36, 38, 0.1);
+  }
+  .ui.stackable.menu .left.menu,
+  .ui.stackable.menu .left.item {
+    margin-right: 0 !important;
+  }
+  .ui.stackable.menu .right.menu,
+  .ui.stackable.menu .right.item {
+    margin-left: 0 !important;
   }
 }
 
@@ -1286,63 +1281,63 @@ Floated Menu / Item
 
 .ui.menu .red.active.item,
 .ui.red.menu .active.item {
-  border-color: #E74C3C !important;
-  color: #E74C3C !important;
+  border-color: #DB2828 !important;
+  color: #DB2828 !important;
 }
 .ui.menu .orange.active.item,
 .ui.orange.menu .active.item {
-  border-color: #F7BC05 !important;
-  color: #F7BC05 !important;
+  border-color: #F2711C !important;
+  color: #F2711C !important;
 }
 .ui.menu .yellow.active.item,
 .ui.yellow.menu .active.item {
-  border-color: #F1C40F !important;
-  color: #F1C40F !important;
+  border-color: #FBBD08 !important;
+  color: #FBBD08 !important;
 }
 .ui.menu .olive.active.item,
 .ui.olive.menu .active.item {
-  border-color: #D1D6A9 !important;
-  color: #D1D6A9 !important;
+  border-color: #B5CC18 !important;
+  color: #B5CC18 !important;
 }
 .ui.menu .green.active.item,
 .ui.green.menu .active.item {
-  border-color: #88b154 !important;
-  color: #88b154 !important;
+  border-color: #21BA45 !important;
+  color: #21BA45 !important;
 }
 .ui.menu .teal.active.item,
 .ui.teal.menu .active.item {
-  border-color: #1ABC9C !important;
-  color: #1ABC9C !important;
+  border-color: #00B5AD !important;
+  color: #00B5AD !important;
 }
 .ui.menu .blue.active.item,
 .ui.blue.menu .active.item {
-  border-color: #3498DB !important;
-  color: #3498DB !important;
+  border-color: #2185D0 !important;
+  color: #2185D0 !important;
 }
 .ui.menu .violet.active.item,
 .ui.violet.menu .active.item {
-  border-color: #7574A7 !important;
-  color: #7574A7 !important;
+  border-color: #6435C9 !important;
+  color: #6435C9 !important;
 }
 .ui.menu .purple.active.item,
 .ui.purple.menu .active.item {
-  border-color: #CD6B97 !important;
-  color: #CD6B97 !important;
+  border-color: #A333C8 !important;
+  color: #A333C8 !important;
 }
 .ui.menu .pink.active.item,
 .ui.pink.menu .active.item {
-  border-color: #FC575E !important;
-  color: #FC575E !important;
+  border-color: #E03997 !important;
+  color: #E03997 !important;
 }
 .ui.menu .brown.active.item,
 .ui.brown.menu .active.item {
-  border-color: #563D28 !important;
-  color: #563D28 !important;
+  border-color: #A5673F !important;
+  color: #A5673F !important;
 }
 .ui.menu .grey.active.item,
 .ui.grey.menu .active.item {
-  border-color: #D1D5D8 !important;
-  color: #D1D5D8 !important;
+  border-color: #767676 !important;
+  color: #767676 !important;
 }
 
 /*--------------
@@ -1351,7 +1346,7 @@ Floated Menu / Item
 
 .ui.inverted.menu {
   border: 0px solid transparent;
-  background: #3F3F3F;
+  background: #1B1C1D;
   box-shadow: none;
 }
 
@@ -1411,8 +1406,7 @@ Floated Menu / Item
 /*--- Pressed ---*/
 
 .ui.inverted.menu a.item:active,
-.ui.inverted.menu .link.item:active,
-.ui.inverted.menu a.item:active {
+.ui.inverted.menu .link.item:active {
   background: rgba(255, 255, 255, 0.08);
   color: #ffffff;
 }
@@ -1468,7 +1462,7 @@ Floated Menu / Item
 /* Red */
 .ui.inverted.menu .red.active.item,
 .ui.inverted.red.menu {
-  background-color: #E74C3C;
+  background-color: #DB2828;
 }
 .ui.inverted.red.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1480,7 +1474,7 @@ Floated Menu / Item
 /* Orange */
 .ui.inverted.menu .orange.active.item,
 .ui.inverted.orange.menu {
-  background-color: #F7BC05;
+  background-color: #F2711C;
 }
 .ui.inverted.orange.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1492,7 +1486,7 @@ Floated Menu / Item
 /* Yellow */
 .ui.inverted.menu .yellow.active.item,
 .ui.inverted.yellow.menu {
-  background-color: #F1C40F;
+  background-color: #FBBD08;
 }
 .ui.inverted.yellow.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1504,7 +1498,7 @@ Floated Menu / Item
 /* Olive */
 .ui.inverted.menu .olive.active.item,
 .ui.inverted.olive.menu {
-  background-color: #D1D6A9;
+  background-color: #B5CC18;
 }
 .ui.inverted.olive.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1516,7 +1510,7 @@ Floated Menu / Item
 /* Green */
 .ui.inverted.menu .green.active.item,
 .ui.inverted.green.menu {
-  background-color: #88b154;
+  background-color: #21BA45;
 }
 .ui.inverted.green.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1528,7 +1522,7 @@ Floated Menu / Item
 /* Teal */
 .ui.inverted.menu .teal.active.item,
 .ui.inverted.teal.menu {
-  background-color: #1ABC9C;
+  background-color: #00B5AD;
 }
 .ui.inverted.teal.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1540,7 +1534,7 @@ Floated Menu / Item
 /* Blue */
 .ui.inverted.menu .blue.active.item,
 .ui.inverted.blue.menu {
-  background-color: #3498DB;
+  background-color: #2185D0;
 }
 .ui.inverted.blue.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1552,7 +1546,7 @@ Floated Menu / Item
 /* Violet */
 .ui.inverted.menu .violet.active.item,
 .ui.inverted.violet.menu {
-  background-color: #7574A7;
+  background-color: #6435C9;
 }
 .ui.inverted.violet.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1564,7 +1558,7 @@ Floated Menu / Item
 /* Purple */
 .ui.inverted.menu .purple.active.item,
 .ui.inverted.purple.menu {
-  background-color: #CD6B97;
+  background-color: #A333C8;
 }
 .ui.inverted.purple.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1576,7 +1570,7 @@ Floated Menu / Item
 /* Pink */
 .ui.inverted.menu .pink.active.item,
 .ui.inverted.pink.menu {
-  background-color: #FC575E;
+  background-color: #E03997;
 }
 .ui.inverted.pink.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1588,7 +1582,7 @@ Floated Menu / Item
 /* Brown */
 .ui.inverted.menu .brown.active.item,
 .ui.inverted.brown.menu {
-  background-color: #563D28;
+  background-color: #A5673F;
 }
 .ui.inverted.brown.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1600,7 +1594,7 @@ Floated Menu / Item
 /* Grey */
 .ui.inverted.menu .grey.active.item,
 .ui.inverted.grey.menu {
-  background-color: #D1D5D8;
+  background-color: #767676;
 }
 .ui.inverted.grey.menu .item:before {
   background-color: rgba(34, 36, 38, 0.1);
@@ -1647,7 +1641,6 @@ Floated Menu / Item
 
 .ui.compact.menu {
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0em;
@@ -1691,7 +1684,6 @@ Floated Menu / Item
   margin-right: 0em !important;
   text-align: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1937,6 +1929,22 @@ Floated Menu / Item
 ---------------*/
 
 
+/* Mini */
+.ui.mini.menu {
+  font-size: 0.78571429rem;
+}
+.ui.mini.vertical.menu {
+  width: 9rem;
+}
+
+/* Tiny */
+.ui.tiny.menu {
+  font-size: 0.85714286rem;
+}
+.ui.tiny.vertical.menu {
+  width: 11rem;
+}
+
 /* Small */
 .ui.small.menu {
   font-size: 0.92857143rem;
@@ -1955,7 +1963,7 @@ Floated Menu / Item
 
 /* Large */
 .ui.large.menu {
-  font-size: 1.14285714rem;
+  font-size: 1.07142857rem;
 }
 .ui.large.vertical.menu {
   width: 18rem;
@@ -1963,10 +1971,26 @@ Floated Menu / Item
 
 /* Huge */
 .ui.huge.menu {
-  font-size: 1.42857143rem;
+  font-size: 1.14285714rem;
 }
 .ui.huge.vertical.menu {
   width: 20rem;
+}
+
+/* Big */
+.ui.big.menu {
+  font-size: 1.21428571rem;
+}
+.ui.big.vertical.menu {
+  width: 22rem;
+}
+
+/* Massive */
+.ui.massive.menu {
+  font-size: 1.28571429rem;
+}
+.ui.massive.vertical.menu {
+  width: 25rem;
 }
 
 

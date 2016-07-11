@@ -1,27 +1,30 @@
 ==
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <title>{{ this.page.title }}</title>
-        <meta name="description" content="{{ this.page.meta_description }}">
-        <meta name="title" content="{{ this.page.meta_title }}">
-        <meta name="author" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="{{ 'assets/images/semantic-october.png'|theme }}" />
-        <link href="{{ [
-            'assets/dist/semantic.min.css'
-        ]|theme }}" rel="stylesheet">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+    
+        <link rel="stylesheet" href="{{[
+            'assets/dist/semantic.min.css',
+            'assets/less/magic.less'
+        ]|theme }}" />
         {% styles %}
     </head>
     <body>
+        <!-- Add your magic here -->
         {% page %}
         
-        <!-- SCRIPTS -->
-        <script src="{{ [
+        <script src="{{[
             'assets/js/vendor/jquery.min.js',
             'assets/dist/semantic.min.js',
-            'assets/js/app.js'
+            'assets/js/magic.js',
         ]|theme }}"></script>
         {% framework extras %}
         {% scripts %}

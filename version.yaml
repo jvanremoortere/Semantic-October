@@ -5,3 +5,6 @@
 1.0.0:
     - Semantic-UI 2.1.8 (LESS)
     - Gulp
+1.1.0:
+    - Semantic-UI 2.2.2 (LESS)
+    - jQuery 3.1.0
